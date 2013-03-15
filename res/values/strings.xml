@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SmsCommander</string>
+    <string name="app_version">v1.0</string>
+    <string name="action_settings">Settings</string>
+<!--  	 All for later use		 -->    
+<!--     <string name="activate_listener">Activate listener for sms</string> -->
+<!--     <string name="deactivate_listener">Deactivate listener for sms</string> -->
+<!--     <string name="activate_text">Test</string> -->
+<!-- 	<string name="sms_magicword">Pussylover</string> -->
+    <string name="welcome_text">waiting for sms ;)</string>
+</resources>
