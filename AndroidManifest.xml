@@ -29,13 +29,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        
         <receiver android:name=".BootReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="org.lowerland.smscommander.TEST_BROADCAST" />
             </intent-filter>
         </receiver>
+        
         
 		<!-- Our Receiver for sms with Priority 1000 means we are the first one to receive -->
 		<!-- Meaning that even the system didnt get it yet !! becarefull here ;) -->

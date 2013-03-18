@@ -3,6 +3,7 @@ package org.lowerland.smscommander;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.telephony.SmsMessage;
 import android.widget.Toast;
@@ -10,6 +11,7 @@ import android.widget.Toast;
 
 public class SmsReceiver extends BroadcastReceiver {
 	static final String TAG = "SmsReceiver";
+	MediaPlayer mpSplash;
 	
 @Override
 public void onReceive(Context context, Intent intent) {
@@ -35,6 +37,10 @@ public void onReceive(Context context, Intent intent) {
         	      // Strings match! (This code will execute)
         		  // To display a Toast when there is an SMS with our secret text.
         		  Toast.makeText(context,"PREPARE FOR ULTIMATE TROLLING !! :D",Toast.LENGTH_LONG).show();
+        			// play sound
+        			mpSplash = MediaPlayer.create(context, R.raw.test_cbr);
+        			mpSplash.start();
+        			//
         		  
         	  } else {
         		  

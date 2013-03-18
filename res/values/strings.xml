@@ -9,5 +9,10 @@
 <!--     <string name="deactivate_listener">Deactivate listener for sms</string> -->
 <!--     <string name="activate_text">Test</string> -->
 <!-- 	<string name="sms_magicword">Pussylover</string> -->
-    <string name="welcome_text">waiting for sms ;)</string>
+    <string name="welcome_text">
+        waiting for sms
+        with the Magicword ;)
+        </string>
+    <string name="magicword">Magicword: Pussylover</string>
+    
 </resources>
