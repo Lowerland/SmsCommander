@@ -3,8 +3,10 @@ package org.lowerland.smscommander;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.telephony.SmsMessage;
 import android.widget.Toast;
 
@@ -15,8 +17,13 @@ public class SmsReceiver extends BroadcastReceiver {
 	
 @Override
 public void onReceive(Context context, Intent intent) {
-	// for later use
-	// String strMagicWord = getResources().getString(R.string.sms_magicword);
+	
+	// gets the shared prefs
+	SharedPreferences prefs = PreferenceManager
+			.getDefaultSharedPreferences(context);
+	
+	// gets our preference for our magicword
+	String magicword = prefs.getString("magicword", "");
 	
        Bundle extras = intent.getExtras();
        if (extras == null)
@@ -28,12 +35,11 @@ public void onReceive(Context context, Intent intent) {
           String sender = SMessage.getOriginatingAddress();
           String body = SMessage.getMessageBody().toString();
           
-          
 			  // sms body txt compares to our secret text string :)
           
-        	  if(body.compareTo("Pussylover") == 0)
+        	  if(body.compareTo(magicword) == 0)
         	  {
-        		  
+       		  
         	      // Strings match! (This code will execute)
         		  // To display a Toast when there is an SMS with our secret text.
         		  Toast.makeText(context,"PREPARE FOR ULTIMATE TROLLING !! :D",Toast.LENGTH_LONG).show();
