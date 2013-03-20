@@ -12,9 +12,13 @@
     <string name="welcome_text">SMS CMD Services</string>
         <string name="uiTitle">Commander</string>
     <string name="uiText_magicword">Standard Magicword: Trollmode</string>
-    <string name="pref_magicword_title">Magicword</string>
-    <string name="pref_magicword_sum">Enter your magicword</string>
     <string name="preferences">Preferences</string>
+        
+    <string name="pref_category_trollmode">Trollmode Settings</string>
+    
+    <string name="pref_magicword_title">Magicword</string>
+    <string name="pref_magicword_sum">The magicword that will activate TrollMode.</string>
     <string name="pref_magicword_default">Trollmode</string>
+    
     
 </resources>

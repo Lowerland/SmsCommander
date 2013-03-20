@@ -2,12 +2,20 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:icon="@drawable/ic_launcher"
     android:label="@string/preferences"
-    android:theme="@style/AppTheme" android:title="@string/preferences">
+    android:theme="@style/AppTheme"
+    android:title="@string/preferences" >
 
-    <EditTextPreference
-        android:key="magicword"
-        android:summary="@string/pref_magicword_sum"
-        android:title="@string/pref_magicword_title"
-        android:defaultValue="@string/pref_magicword_default"  />
-		
+    <PreferenceScreen
+        android:key="button_troll_category_key"
+        android:persistent="false"
+        android:title="@string/pref_category_trollmode" >
+        
+        <EditTextPreference
+    android:defaultValue="@string/pref_magicword_default"
+    android:key="magicword"
+    android:summary="@string/pref_magicword_sum"
+    android:title="@string/pref_magicword_title" />
+        
+    </PreferenceScreen>
+    
 </PreferenceScreen>

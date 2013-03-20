@@ -5,5 +5,5 @@
         android:id="@+id/item_prefs"
         android:title="@string/preferences">
     </item>
-   
+  
 </menu>
