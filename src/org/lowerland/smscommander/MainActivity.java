@@ -9,6 +9,7 @@ import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends Activity implements OnSharedPreferenceChangeListener {
 	static final String TAG = "MainActivity";
@@ -29,13 +30,18 @@ public class MainActivity extends Activity implements OnSharedPreferenceChangeLi
 		Log.d(TAG, "onCreated"+magicword);
 }
 
+	public void onClick(View v) {
+		startActivity(new Intent(this, PrefsActivity.class));
+		Log.d(TAG, "Settings button clicked");
+	}
+	
 	// Menu Stuff
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.menu, menu);
 		return true;
 	}
-
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 

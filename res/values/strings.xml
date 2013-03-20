@@ -9,10 +9,8 @@
 <!--     <string name="deactivate_listener">Deactivate listener for sms</string> -->
 <!--     <string name="activate_text">Test</string> -->
 <!-- 	<string name="sms_magicword">Pussylover</string> -->
-    <string name="welcome_text">
-        waiting for sms
-        with the Magicword ;)
-        </string>
+    <string name="welcome_text">SMS CMD Services</string>
+        <string name="uiTitle">Commander</string>
     <string name="uiText_magicword">Standard Magicword: Trollmode</string>
     <string name="pref_magicword_title">Magicword</string>
     <string name="pref_magicword_sum">Enter your magicword</string>

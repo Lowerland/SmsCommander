@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/bg"
+    android:background="@color/grey_style_4"
     android:orientation="vertical" >
 
     <TextView
@@ -17,14 +17,14 @@
         android:textColor="@color/green_2"
         android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/textView2"
+    <Button
+        android:id="@+id/uibutton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:text="@string/uiText_magicword"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/blue_1" />
+        android:layout_marginTop="20dp"
+        android:onClick="onClick"
+        android:text="@string/preferences"
+        android:textColor="@color/grey_style_1" />
 
 </LinearLayout>

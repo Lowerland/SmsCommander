@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:icon="@drawable/ic_launcher"
+    android:label="@string/preferences"
+    android:theme="@style/AppTheme" android:title="@string/preferences">
 
     <EditTextPreference
         android:key="magicword"
