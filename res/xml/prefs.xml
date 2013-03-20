@@ -9,13 +9,18 @@
         android:key="button_troll_category_key"
         android:persistent="false"
         android:title="@string/pref_category_trollmode" >
-        
         <EditTextPreference
-    android:defaultValue="@string/pref_magicword_default"
-    android:key="magicword"
-    android:summary="@string/pref_magicword_sum"
-    android:title="@string/pref_magicword_title" />
-        
+            android:defaultValue="@string/pref_magicword_default"
+            android:key="magicword"
+            android:summary="@string/pref_magicword_sum"
+            android:title="@string/pref_magicword_title" />
+
+        <ListPreference
+            android:entries="@array/soundNames"
+            android:entryValues="@array/soundValues"
+            android:key="sound"
+            android:summary="@string/sound_summary"
+            android:title="@string/sound" />
     </PreferenceScreen>
-    
+
 </PreferenceScreen>
