@@ -20,5 +20,29 @@
     <string name="pref_magicword_sum">The magicword that will activate TrollMode.</string>
     <string name="pref_magicword_default">Trollmode</string>
     
+    <string name="sound_summary">What sound to play</string>
+    <string name="sound">Sound</string>
+    
+    <string-array name="soundNames">
+        <item>Script Check Complete</item>
+        <item>Homer Simpson - Nacho Man</item>
+        <item>Whohahaha</item>
+        <item>Eric Cartman - Goddammit</item>
+        <item>Dog barking</item>
+        <item>Donkey</item>
+        <item>Orgasm</item>
+        <item>Orgasm 2</item>
+    </string-array>
+
+    <string-array name="soundValues">
+        <item>script_check</item>
+        <item>homer_nacho_man</item>
+        <item>whohaha</item>
+        <item>goddammit</item>
+        <item>dog</item>
+        <item>donkey</item>
+        <item>orgasm</item>
+        <item>orgasm2</item>
+    </string-array>
     
 </resources>
