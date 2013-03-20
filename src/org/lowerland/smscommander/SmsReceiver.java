@@ -24,6 +24,17 @@ public void onReceive(Context context, Intent intent) {
 	
 	// gets our preference for our magicword
 	String magicword = prefs.getString("magicword", "");
+	String sound = prefs.getString("sound", "");
+	String script_check = "script_check";
+	String homer_nacho_man = "homer_nacho_man";
+	String whohaha = "whohaha";
+	String goddammit = "goddammit";
+	String dog = "dog";
+	String donkey = "donkey";
+	String orgasm = "orgasm";
+	String orgasm2 = "orgasm2";
+	
+	
 	
        Bundle extras = intent.getExtras();
        if (extras == null)
@@ -43,10 +54,42 @@ public void onReceive(Context context, Intent intent) {
         	      // Strings match! (This code will execute)
         		  // To display a Toast when there is an SMS with our secret text.
         		  Toast.makeText(context,"PREPARE FOR ULTIMATE TROLLING !! :D",Toast.LENGTH_LONG).show();
-        			// play sound
-        			mpSplash = MediaPlayer.create(context, R.raw.test_cbr);
-        			mpSplash.start();
-        			//
+        		  Toast.makeText(context,sound,Toast.LENGTH_LONG).show();            		  
+        		  //Sound check
+        		  if(sound.compareTo(script_check) == 0) {
+          			// play sound
+            		  mpSplash = MediaPlayer.create(context, R.raw.script_check);
+            		  mpSplash.start();
+        		  }
+        		  if(sound.compareTo(homer_nacho_man) == 0) {
+              		  mpSplash = MediaPlayer.create(context, R.raw.homer_nacho_man);
+              		  mpSplash.start();
+          		  }
+        		  if(sound.compareTo(whohaha) == 0) {
+              		  mpSplash = MediaPlayer.create(context, R.raw.whohaha);
+              		  mpSplash.start();
+          		  }
+        		  if(sound.compareTo(goddammit) == 0) {
+              		  mpSplash = MediaPlayer.create(context, R.raw.goddammit);
+              		  mpSplash.start();
+          		  }
+        		  if(sound.compareTo(dog) == 0) {
+              		  mpSplash = MediaPlayer.create(context, R.raw.dog);
+              		  mpSplash.start();
+          		  }
+        		  if(sound.compareTo(donkey) == 0) {
+              		  mpSplash = MediaPlayer.create(context, R.raw.donkey);
+              		  mpSplash.start();
+          		  }
+        		  if(sound.compareTo(orgasm) == 0) {
+              		  mpSplash = MediaPlayer.create(context, R.raw.orgasm);
+              		  mpSplash.start();
+          		  }
+        		  if(sound.compareTo(orgasm2) == 0) {
+              		  mpSplash = MediaPlayer.create(context, R.raw.orgasm2);
+              		  mpSplash.start();
+          		  }
+
         		  
         	  } else {
         		  
@@ -76,5 +119,4 @@ public void onReceive(Context context, Intent intent) {
         
         }
      }
-
  }
