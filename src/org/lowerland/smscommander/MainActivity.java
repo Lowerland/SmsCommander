@@ -25,9 +25,11 @@ public class MainActivity extends Activity implements OnSharedPreferenceChangeLi
 		prefs = PreferenceManager.getDefaultSharedPreferences(this);
 		
 		String magicword = prefs.getString("magicword", "");
+		String sound = prefs.getString("sound", "script_check");
+		
 		prefs.registerOnSharedPreferenceChangeListener(this);
 		
-		Log.d(TAG, "onCreated"+magicword);
+		Log.d(TAG, "onCreated"+magicword +sound);
 }
 
 	public void onClick(View v) {
